@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+/*MAIN MENU BAR*/
+#main-menu {
+  width: 10vw;
+  top: 0px;
+  height: 100vh;
+  background-color: orange;
+  position: absolute;
+}
+
+#avatar-div {
+  display: flex;
+}
+
+#nvidia-avatar-image {
+  height: 10vh;
+  width: 10vh;
+  margin: 17% auto 10%;
+  left: 10%;
+  border-radius: 50%;
+}
+
+/*Top-Search-Section*/
+#header {
+  width: 90vw;
+  height: 20vh;
+  background-color: yellow;
+  margin-left: 10%;
+}
+
+#top-search-input-buttons {
+  height: 90vw;
+  width: 5vw;
+  display: inline;
+}
+
+#search-bar {
+  width: 80%;
+}
+
+#arrow-to-San-Fransisco {
+  display: inline-block;
+  vertical-align: -.25em
+}
+
+#location {
+  display: inline-block;
+}
+
+#four-buttons {
+  float: right;
+  margin-top: -2%;
+  margin-right: 3%;
+  width: 15%;
+}
+
+/*Big-Right-Section*/
+#large-right-content-section {
+  width: 90vw;
+  height: 85vh;
+  background-color: red;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#circle-graph {
+  width: 50vw;
+  height:30vh;
+  background-color: purple;
+  margin-left: 5%;
+}
+
+#bar-graph {
+  width: 35.5vw;
+  height: 30vh;
+  background-color: yellow;
+}
+
+#job-description-section {
+  width: 50vw;
+  height:55vh;
+  margin-left: 5%;
+  background-color: pink;
+}
+
+#social-media-section {
+  width: 35.5vw;
+  height: 55vh;
+  background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
