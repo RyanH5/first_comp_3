@@ -4,6 +4,7 @@
   <title>Static Comp IIV</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <nav id="main-menu">
@@ -12,69 +13,193 @@
           <img src="images/NVIDIA logo.png" id="nvidia-avatar-image">
         </div>
         <h1 class="section-title" id="nvidia-avatar-title">NVIDIA</h1>
-        <hr>
+        <i class="fas fa-chevron-down nvidia-dropdown-button"></i>
       </article>
-      <article>
+      <hr id="top-hr">
+      <article class="main-menu-articles">
         <h3 class="menu-headings">Home</h3>
-        <ul id="platforms-list">
+        <ul id="platforms-list" style="list-style: none;">
           <li class="company-departments"><i class="fas fa-home"></i>ABOUT NVIDIA</li>
-          <li class="company-departments" id="company-departments"><span img src=""></span>PLATFORMS</li>
-          <li class="company-departments"><span img src=""></span>DEVELOPERS</li>
-          <li class="company-departments"><span img src=""></span>COMMUNITY</li>
-          <li class="company-departments"><span img src=""></span>DRIVERS</li>
-          <hr>
+          <li class="company-departments" id="company-departments"><i class="fas fa-chart-pie"></i>PLATFORMS</li>
+          <li class="company-departments"><i class="fas fa-user-secret"></i>DEVELOPERS</li>
+          <li class="company-departments"><i class="fab fa-reddit-alien"></i>COMMUNITY</li>
+          <li class="company-departments"><i class="fab fa-react"></i>DRIVERS</li>
         </ul> 
       </article>
+      <hr>
       <article class="main-menu-articles" id="admin-menu">
         <h3 class="menu-headings">Platforms</h3>
-        <ul id="platforms-list">
-          <li class="platform-titles"><span img src=""></span>DEEP LEARNING</li>
-          <li class="platform-titles"><span img src=""></span>DATA CENTERS</li>
-          <li class="platform-titles"><span img src=""></span>AUTONOMOUS</li>
-          <li class="platform-titles"><span img src=""></span>SELF-DRIVING CARS</li>
-          <li class="platform-titles"><span img src=""></span>VIRTUAL REALITY</li>
-          <hr>
+        <ul id="platforms-list" style="list-style: none;">
+          <li class="platform-titles"><i class="fab fa-android"></i>DEEP LEARNING</li>
+          <li class="platform-titles"><i class="fas fa-cloud-upload-alt"></i>DATA CENTERS</li>
+          <li class="platform-titles" id="highlited-title"><i class="fab fa-nintendo-switch"></i>AUTONOMOUS</li>
+          <li class="platform-titles"><i class="fas fa-car"></i>SELF-DRIVING CARS</li>
+          <li class="platform-titles"><i class="far fa-eye-slash"></i>VIRTUAL REALITY</li>
         </ul>
       </article>
-      <article class="main-menu-articles" id="categories-meniu">
-        <h3 class="menu-headings">Platforms</h3>
-        <ul id="platforms-list">
-          <li class="platform-titles"><span img src=""></span>Drive PX</li>
-          <li class="platform-titles"><span img src=""></span>Drive IX</li>
-          <li class="platform-titles"><span img src=""></span>HD Mapping</li>
-          <li class="platform-titles"><span img src=""></span>Driver Assistance</li>
-          <hr>
+      <hr>
+      <article class="main-menu-articles" id="categories-menu">
+        <h3 class="menu-headings">Self-Driving Cars</h3>
+        <ul id="platforms-list" style="list-style: none;">
+          <li class="self-driving-techs"><i class="fas fa-hdd"></i>Drive PX</li>
+          <li class="self-driving-techs"><i class="fab fa-google-drive"></i>Drive IX</li>
+          <li class="self-driving-techs"><i class="fas fa-map-signs"></i>HD Mapping</li>
+          <li class="self-driving-techs"><i class="fas fa-info-circle"></i>Driver Assistance</li>
         </ul>    
       </article>
     </nav>
-    <section id="header">
-      <form id="top-search-input-buttons">
-        <button id="collapse-menu-hamburger"><i class="fas fa-bars"></i></button>
-        <input type="text" name="search-input" placeholder="Search NVIDIA Platform Opportunities" id="search-bar"><i class="fas fa-search"></i>      
-      </form>
-      <h1>NVIDIA PLATFORMS</h1>
-      <i class="fas fa-arrow-circle-right" id="arrow-to-San-Fransisco"></i>
-      <h6 id="location">San Fransisco, CA <span>Review our site</span></h6>
-      <fieldset id="four-buttons">
-        <button id="open-button">OPEN</button>
-        <button class="pin-edit-trash-button"></button>
-        <button class="pin-edit-trash-button"></button>
-        <button class="pin-edit-trash-button"></button>
-      </fieldset>
-    </section>
-    <section id="large-right-content-section">
-      <article id="circle-graph">
-        <button>Total</button>
-        <hr><button></button>
-      </article>
-      <article id="bar-graph">
-        <hr>    
-      </article>  
-      <main id="job-description-section">
-        
-      </main>
-      <aside id="social-media-section">  
-      </aside>
+    <section id="page-excluding-menu">
+      <section id="header">
+        <form id="top-search-input-buttons">
+          <button id="collapse-menu-hamburger"><i class="fas fa-bars"></i></button>
+          <input type="text" name="search-input" placeholder="Search NVIDIA Platform Opportunities" id="search-bar"> 
+          <button class="top-right-three-buttons" id="user-button"><i class="fas fa-user"></i></button>
+          <button class="top-right-three-buttons"><i class="fas fa-calendar"></i></button>
+          <button class="top-right-three-buttons"><i class="fas fa-th"></i></button>
+        </form>
+        <h1 id="page-title">NVIDIA PLATFORMS</h1>
+        <i class="fas fa-map-marker" id="arrow-to-San-Fransisco"></i>
+        <h6 id="location">San Fransisco, CA <span id="review">Review our site</span></h6>
+        <fieldset id="four-buttons">
+          <button id="open-button"><div id="green-dot"></div>OPEN</button>
+          <button class="pin-edit-trash-button"><i class="fas fa-paperclip"></i></button>
+          <button class="pin-edit-trash-button"><i class="fas fa-pencil-alt"></i></button>
+          <button class="pin-edit-trash-button"><i class="fas fa-trash"></i></button>
+        </fieldset>
+        <nav id="web-page-nav-list">
+          <ul id="nav-list" style="list-style: none;">
+            <li class="nav-list-li" id="nav-list-performance-li">Performance</li>
+            <li class="nav-list-li">Tesla V100</li>
+            <li class="nav-list-li">GPU</li>
+            <li class="nav-list-li">Gaming</li>
+            <li class="nav-list-li">AI</li>
+            <li class="nav-list-li">Data Centers</li>
+            <li class="nav-list-li">Shop</li>
+          </ul>
+        </nav>
+      </section>
+      <section id="large-right-content-section">
+        <article id="circle-graph-section">
+          <form id="circle-graph-form">
+            <svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
+              <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+              <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="green" stroke-width="3" stroke-dasharray="90 10" stroke-dashoffset="0" style=" height: 10%;"></circle>
+                <g class="chart-text">
+                  <text x="21%" y="55%" class="chart-number">3,154</text>
+                  <text x="31%" y="68%" class="chart-text">Revenue</text>
+                </g>
+            </svg>
+<svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
+  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="orange" stroke-width="3" stroke-dasharray="70 30" stroke-dashoffset="0" style="
+    height: 10%;
+"></circle>
+<text x="21%" y="55%" class="chart-number">
+      2,189
+    </text>
+    <text x="31%" y="68%" class="chart-text">
+      Expected
+    </text>
+</svg>
+<svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
+  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="red" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="0" style="
+    height: 10%;
+"></circle>
+<text x="21%" y="55%" class="chart-number">
+      1,389
+    </text>
+    <text x="26%" y="68%" class="chart-text">
+      Competition
+    </text>
+</svg>
+          </form>
+          <button id="totals-btn">Totals - Out of 50 Companies</button>
+        </article>
+        <article id="bar-graph">
+          <img src="images/bar-chart-3-0.png" id="bar-graph-image">
+          <button id="stock-performance-btn">Stock Performance</button> 
+        </article> 
+        <div id="hr-button-div">
+          <hr id="left-main-hr">
+          <button class="button-between-hrs"><i class="fas fa-angle-up"></i></button>
+          <hr id="right-main-hr">
+        </div>
+        <main id="job-description-section">
+          <article class="company-description-header">
+            <table id="job-description-table">
+              <tr id="job-description-header">
+                <th id="position-title">Position</th>
+                <th><button id="edit-position-btn"><i class="fas fa-edit"></i>  EDIT</button></th>
+              </tr>
+              <tr class="bottom-bordered">
+                <th>Location</th>
+                <th>San Fransisco</th>
+              </tr>
+              <tr>
+                <th>Education</th>
+                <th>Turing School of Software and Desing</th>
+              </tr>
+              <tr>
+                <th>Position</th>
+                <th>Full-time</th>
+              </tr>
+              <tr>
+                <th>Experience</th>
+                <th>2-Do-Box</th>
+              </tr>
+              <tr>
+                <th>Status</th>
+                <th>Available</th>
+              </tr>
+              <tr id="description">
+                <th>Description</th>
+                <th>We are seeking a dedicated, professional software developer to join our team. The position will be working to bring our most leading edge processors and LIDAR systems to the public.</th>
+              </tr>
+              <tr>
+                <th>Hiring Lead</th>
+                <th><img src="images/nvidia-ceo.jpg" id="nvidia-ceo"></th>
+              </tr>
+              <tr>
+                <th>Salary</th>
+                <th>$1,000,000</th>
+              </tr>
+            </table>
+          </article>
+          
+        </main>
+        <aside id="social-media-section"> 
+          <form id="three-social-media-buttons-form">
+            <article class="social-media-buttons" id="fb-btn"><i class="fab fa-facebook"></i><p class="social-media-post">Post to Facebook</p></article>
+            <article class="social-media-buttons" id="twitter-btn"><i class="fab fa-twitter"></i><p class="social-media-post">Tweet this Page</p></article>
+            <article class="social-media-buttons" id="linked-in-btn"><i class="fab fa-linkedin"></i><p class="social-media-post">Post to Linked-In</p></article>
+            <article class="bottom-links-article">
+              <h3 class="bottom-links-h2"><i class="fas fa-globe"></i> Link to this Job</h3>
+              <p class="bottom-links-p">Come work at NVIDIA, Ryan. Let's build driver-less cars.</p>
+              <input type="text" name="job-link" placeholder="www.come-work-here-Ryan.com" class="bottom-links-input">
+              <button class="bottom-links-btn">COPY</button>
+              <hr class="bottom-links-hr">
+            </article>
+            <article class="bottom-links-article">
+              <h3 class="bottom-links-h2"><i class="fab fa-algolia"></i> Test Our VR</h3>
+              <p class="bottom-links-p">Come test out our Virtual Reality and Augmented Reality headsets.</p>
+              <input type="text" name="job-link" placeholder="Take One - I won't tell" class="bottom-links-input">
+              <button class="bottom-links-btn">COPY</button>
+              <hr class="bottom-links-hr">
+            </article>
+            <article class="bottom-links-article">
+              <h3 class="bottom-links-h2"><i class="fas fa-paper-plane"></i> Upload Resumes by Email</h3>
+              <p class="bottom-links-p">This is pretty much a formality, but send your email.</p>
+              <input type="text" name="job-link" placeholder="JohnSmith@gmail.com" id="bottom-links-email-input">
+            </article>
+          </form> 
+        </aside>
+      </section>
     </section>
     
 
