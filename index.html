@@ -72,16 +72,16 @@
             <li class="nav-list-li">Tesla V100</li>
             <li class="nav-list-li">GPU</li>
             <li class="nav-list-li">Gaming</li>
-            <li class="nav-list-li">AI</li>
-            <li class="nav-list-li">Data Centers</li>
-            <li class="nav-list-li">Shop</li>
+            <li class="nav-list-li" id="AI-li">AI</li>
+            <li class="nav-list-li" id="data-centers-li">Data Centers</li>
+            <li class="nav-list-li" id="shop-li">Shop</li>
           </ul>
         </nav>
       </section>
       <section id="large-right-content-section">
         <article id="circle-graph-section">
           <form id="circle-graph-form">
-            <svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
+            <svg width="80%" height="80%" viewBox="0 0 42 42" class="donut">
               <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
               <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
               <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="green" stroke-width="3" stroke-dasharray="90 10" stroke-dashoffset="0" style=" height: 10%;"></circle>
@@ -90,41 +90,31 @@
                   <text x="31%" y="68%" class="chart-text">Revenue</text>
                 </g>
             </svg>
-<svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
-  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-
-  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="orange" stroke-width="3" stroke-dasharray="70 30" stroke-dashoffset="0" style="
-    height: 10%;
-"></circle>
-<text x="21%" y="55%" class="chart-number">
-      2,189
-    </text>
-    <text x="31%" y="68%" class="chart-text">
-      Expected
-    </text>
-</svg>
-<svg width="28%" height="28%" viewBox="0 0 42 42" class="donut">
-  <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
-  <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
-
-  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="red" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="0" style="
-    height: 10%;
-"></circle>
-<text x="21%" y="55%" class="chart-number">
-      1,389
-    </text>
-    <text x="26%" y="68%" class="chart-text">
-      Competition
-    </text>
-</svg>
+            <svg width="80%" height="80%" viewBox="0 0 42 42" class="donut">
+              <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+              <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="orange" stroke-width="3" stroke-dasharray="70 30" stroke-dashoffset="0" style=" height: 10%;"></circle>
+                <text x="21%" y="55%" class="chart-number">2,189</text>
+                <text x="31%" y="68%" class="chart-text">Expected</text>
+            </svg>
+            <svg width="80%" height="80%" viewBox="0 0 42 42" class="donut">
+              <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+              <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+              <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="red" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="0" style="height: 10%;"></circle>
+                <text x="21%" y="55%" class="chart-number">1,389</text>
+                <text x="26%" y="68%" class="chart-text">Competition</text>
+            </svg>
           </form>
-          <button id="totals-btn">Totals - Out of 50 Companies</button>
         </article>
         <article id="bar-graph">
-          <img src="images/bar-chart-3-0.png" id="bar-graph-image">
-          <button id="stock-performance-btn">Stock Performance</button> 
+          <form id="bar-graph-form">
+            <img src="images/bar-chart-3-0.png" id="bar-graph-image">
+          </form> 
         </article> 
+        <form id="totals-stock-btn-form">
+          <button id="totals-btn">Totals - Out of 50 Companies</button>
+          <button id="stock-performance-btn">Stock Performance</button>
+        </form>  
         <div id="hr-button-div">
           <hr id="left-main-hr">
           <button class="button-between-hrs"><i class="fas fa-angle-up"></i></button>
@@ -171,7 +161,6 @@
               </tr>
             </table>
           </article>
-          
         </main>
         <aside id="social-media-section"> 
           <form id="three-social-media-buttons-form">
