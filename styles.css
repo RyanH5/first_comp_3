@@ -365,8 +365,8 @@ button:hover {
 #left-main-hr {
   color: rgb(113, 126, 147);
   display: inline-block;
-  margin-left: 4%;
   margin: 0%;
+  margin-left: 4%;
   width: 45.5%;
 }
 
